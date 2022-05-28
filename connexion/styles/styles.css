@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Mono:wght@100;200&family=IM+Fell+DW+Pica&family=Mate+SC&family=Montserrat:wght@100&family=Roboto&display=swap');
+body{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 198, 198);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+form{
+    margin-top: 20px;
+    background-color: rgb(234, 242, 242);
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width:300px; 
+    filter: drop-shadow(0 0 0.75rem rgb(137, 135, 136));
+}
+form h1{
+    color: brown;
+    text-align: center;
+}
+
+form .social-media{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form .social-media p{
+    padding: 5px;
+    margin-left: 10px ;
+    border: 1px solid #545454;
+    border-radius: 100%;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+form p.email{
+    text-align: center;
+}
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input[type="email"], input[type="password"]{
+    padding: 15px ;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(191, 191, 193);
+    margin-bottom: 15px;
+    outline: none;
+}
+
+form .inscription{
+    padding: 20px;
+    font-size: 10;
+    color: #545454;
+}
+
+button{
+    display: inline-block;
+    background-color: brown;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;   
+    font-size: 20px; 
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    margin: 5px;
+}
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span::after{
+    content:"\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgba(119, 120, 120, 0.966);
+}
+button:hover span{
+    padding-right: 25px;
+}
+button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+form a:link{
+    text-decoration: none;
+}
+
